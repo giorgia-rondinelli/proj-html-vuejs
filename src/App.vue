@@ -29,7 +29,7 @@ export default {
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @use './assets/scss/main.scss'
 
 </style>
