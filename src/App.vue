@@ -1,12 +1,14 @@
 <script >
-import Main from './components/Main.vue'
+import Main from './components/Main.vue';
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 
 export default {
   components:{
     Main,
     Header,
+    Footer
 
   },
   data(){
@@ -20,9 +22,10 @@ export default {
 </script>
 
 <template>
-  <div>
+  
     <Header />
-    <Main /></div>
+    <Main />
+    <Footer />
 
 </template>
 
