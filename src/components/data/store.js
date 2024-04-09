@@ -121,7 +121,8 @@ export const store = reactive({
     name:'John Doe',
     text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio optio similique possimus dignissimos molestias perferendis'
 
-  }
+  },
+  badges:['gadgets','photography','lifestyle','fashion','recipes','travel']
 
 
 

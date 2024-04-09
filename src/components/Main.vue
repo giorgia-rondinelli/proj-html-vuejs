@@ -1,9 +1,11 @@
 <script >
 import {store} from './data/store'
 import Author from './partials/Author.vue'
+import Badge from './partials/Badge.vue'
 import Card from './partials/Card.vue'
 import Post from './partials/Post.vue'
 import SideCard from './partials/SideCard.vue'
+
 
 
 
@@ -12,7 +14,8 @@ export default {
     Card,
     Post,
     SideCard,
-    Author
+    Author,
+    Badge
   },
   data(){
     return{
@@ -79,6 +82,17 @@ export default {
       
     </div>
   </section>
+  <section class="section-badge">
+    <div class="container container-badge  d-flex justify-content-between  align-items-center ">
+      <i class="fa-solid fa-chevron-left"></i>
+      <Badge
+      v-for=" badge in store.badges" :key="badge" 
+      :name="badge"/>
+      <i class="fa-solid fa-chevron-right"></i>
+      
+    </div>
+
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -95,6 +109,16 @@ export default {
   margin-top: 40px;
   margin-bottom: 15px;
 }
+.section-badge{
+  background-color: $blue;
+  
+  .container-badge{
+    height: 150px;
+  }
+ 
+}
+
+
 
 
 </style>
