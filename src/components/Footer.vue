@@ -34,7 +34,9 @@ export default {
 
           },
         ],
-        categories:['gadget','photography','lifestyle','fashion','receipes','travel','business','architecture','reviews','sports','videos','technology','design']
+        categories:['gadget','photography','lifestyle','fashion','receipes','travel','business','architecture','reviews','sports','videos','technology','design'],
+        copyright:' Copyright 2020 All Rights Reserved',
+        extra:['FAQs', 'Sitemap','Contact Us']
         
       }
      
@@ -94,8 +96,22 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container">porto</div>
+    <div class="footer-bottom d-flex align-items-center ">
+      <div class="container  ">
+        <div class="row">
+          <div class="col-1"><img src="/public/img/logo-footer.png" alt=""></div>
+        <div class="col d-flex justify-content-between align-items-center ">
+          <div class=" copy">&copy {{ footer.copyright }}</div>
+          <div class="d-flex">
+          <div class="extra" v-for="ex in footer.extra" :key="ex"><i class="fa-solid fa-chevron-right chev"></i>{{ ex }}</div>
+        </div>
+        </div>
+        <div class="chevextra d-flex justify-content-center align-items-center "><i class="fa-solid fa-chevron-up up  "></i></div>
+      </div>
+      </div>
+    </div>
 
+    
   </footer>
 
 </template>
@@ -167,5 +183,49 @@ export default {
   }
 
 }
+.footer-bottom{
+  height: 95px;
+  background-color: #1C2023;
+  position: relative;
+  
+  .img-container{
+    width: 80px;
+    background-color: blue;
+  }
+  img{
+    filter: brightness(60%);
+    object-fit: contain;
+    height: 35px;
+    width: 80px;
+    display: inline;
+    
+  }
+  .copy{
+    color: $t-4;
+    font-size: .7rem;
+  }
+  .extra{
+    color: $t-3;
+    font-size: .8rem;
 
+  }
+  .chev{
+    font-size: 8px;
+    margin-left: 20px;
+    margin-right:5px
+  }
+}
+.chevextra{
+  background-color: $bg-dark-grey;
+  height:50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  .up{
+    color: $white;
+    font-size: 12px;
+  }
+
+}
 </style>
