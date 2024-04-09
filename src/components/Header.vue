@@ -7,7 +7,7 @@ export default {
       header:{
         title:'Everything about Lifestyle, Travel and Gadgets!',
         menuTop:['sign in', 'about us ','contact us ', 'buy now'],
-        img:'/public/img/logo-default-slim.png',
+        img:'/img/logo-default-slim.png',
         mainMenu:[ , 'Elements','features','pages','portfolio','blog','shop']
 
 

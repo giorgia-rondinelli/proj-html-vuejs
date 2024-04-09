@@ -10,12 +10,12 @@ export default {
           {
             name:'Lorem ipsum dolor sit, consectetur adipiscing elit.',
             date:'1:45 pm May 14th',
-            img:'/public/img/our-office-4-square.jpg'
+            img:'/img/our-office-4-square.jpg'
           },
           {
             name:'Lorem ipsum dolor sit, consectetur adipiscing elit.',
             date:'2:45 pm May 14th',
-            img:'/public/img/our-office-5-square.jpg'
+            img:'/img/our-office-5-square.jpg'
           }
         ],
         comments:[
