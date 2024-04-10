@@ -9,6 +9,8 @@ import Article from './partials/Article.vue'
 import Tweet from './partials/Tweet.vue'
 import Collage from './partials/Collage.vue'
 import Tag from './partials/Tag.vue'
+import ArticleNoImage from './partials/ArticleNoImage.vue'
+import Page from './partials/Page.vue'
 
 
 
@@ -23,7 +25,9 @@ export default {
     Article,
     Tweet,
     Collage,
-    Tag
+    Tag,
+    ArticleNoImage,
+    Page
   },
   data(){
     return{
@@ -115,6 +119,20 @@ export default {
       :comment="article.comment"
       :badge="article.badge"
       />
+      <div class="d-flex flex-wrap pt-5 ">
+      <Collage  v-for="photo in store.photoArticle" :key="photo"
+      :img="photo"/>
+      <ArticleNoImage
+      :img="store.collageArticle.img"
+      :day="store.collageArticle.date.day" 
+      :month="store.collageArticle.date.month" 
+      :title="store.collageArticle.title"
+      :text="store.collageArticle.text"
+      :writer="store.collageArticle.writer"
+      :comment="store.collageArticle.comment"
+      :badge="store.collageArticle.badge"
+      />
+      </div>
       </div>
       <div class="col-3">
         <div class="title pb-2  pt-5">latest from twitter</div>
@@ -140,6 +158,17 @@ export default {
       
       </div>
     </div>
+  </section>
+
+  <section class="">
+    <div class="container  "> 
+      <div class="row ">
+        <div class="col-9 d-flex justify-content-end"><Page /></div>
+
+      </div>
+    </div>
+   
+
   </section>
 </template>
 

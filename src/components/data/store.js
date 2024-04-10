@@ -200,7 +200,20 @@ export const store = reactive({
     }
   ],
   instaPhoto:['/img/29739607_2020680068220520_4509928046932787200_n.jpg','/img/30087804_253872848488989_8792603541668626432_n.jpg','/img/29415620_196477127626244_3250318472361541632_n.jpg','/img/30078414_1274410412703843_8290935809419247616_n.jpg','/img/30077195_2066750973610181_3733150062893596672_n.jpg','/img/29415304_166583630713703_1032667922171953152_n.jpg'],
-  tags:['design','brands','video','business','travel',]
+  tags:['design','brands','video','business','travel',],
+  photoArticle:['/img/blog-13.jpg','/img/blog-16.jpg','/img/blog-20.jpg','/img/blog-23.jpg','/img/blog-29.jpg','/img/blog-40.jpg',],
+  collageArticle:{
+    img:'',
+    title:'How to Make Friends as a Grown-Up',
+    text:'Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]',
+    writer:'John Doe',
+    date:{
+      day:14,
+      month:'jan'
+
+    }
+  }
+
 
 
 

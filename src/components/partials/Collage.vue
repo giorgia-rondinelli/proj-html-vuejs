@@ -22,6 +22,7 @@ export default {
         <img :src=img alt="">
       </div>
       
+      
 
 </template>
 
