@@ -5,6 +5,7 @@ import Badge from './partials/Badge.vue'
 import Card from './partials/Card.vue'
 import Post from './partials/Post.vue'
 import SideCard from './partials/SideCard.vue'
+import Article from './partials/Article.vue'
 
 
 
@@ -15,7 +16,8 @@ export default {
     Post,
     SideCard,
     Author,
-    Badge
+    Badge,
+    Article
   },
   data(){
     return{
@@ -92,6 +94,24 @@ export default {
       
     </div>
 
+  </section>
+  <section class="section-article">
+    <div class="container ">
+      <div class="row" >
+      <div class="col-9">
+      <Article v-for="article in store.articles" :key="article"
+      :img="article.img"
+      :day="article.date.day" 
+      :month="article.date.month" 
+      :title="article.title"
+      :text="article.text"
+      :writer="article.writer"
+      :comment="article.comment"
+      :badge="article.badge"
+      />
+      </div>
+      </div>
+    </div>
   </section>
 </template>
 

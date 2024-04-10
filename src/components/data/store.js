@@ -122,7 +122,69 @@ export const store = reactive({
     text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio optio similique possimus dignissimos molestias perferendis'
 
   },
-  badges:['gadgets','photography','lifestyle','fashion','recipes','travel']
+  badges:['gadgets','photography','lifestyle','fashion','recipes','travel'],
+  articles:[
+    {
+      img:'/img/blog-54.jpg',
+      title:'How to Make Friends as a Grown-Up',
+      text:'Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]',
+      writer:'John Doe',
+      date:{
+        day:14,
+        month:'jan'
+      },
+      badge: 'Lifestyle, Travel',
+      comment:12
+
+
+
+    },
+    {
+      img:'/img/blog-55 (1).jpg',
+      title:'Simple Ways to Have a Pretty Face',
+      text:'Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]',
+      writer:'John Doe',
+      date:{
+        day:12,
+        month:'jan'
+      },
+      badge: 'Photography, Travel',
+      Comment:12
+
+
+
+    },
+    {
+      img:'/img/blog-56 (1).jpg',
+      title:'Ranking the greatest players in basketball',
+      text:'Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]',
+      writer:'John Doe',
+      date:{
+        day:10,
+        month:'jan'
+      },
+      badge: 'Sports, Business',
+      Comment:12
+
+
+
+    },
+    {
+      img:'/img/blog-58 (1).jpg',
+      title:'Top Camper Trailer Towing Tips',
+      text:'Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]',
+      writer:'John Doe',
+      date:{
+        day:8,
+        month:'jan'
+      },
+      badge: 'Lifestyle, Travel',
+      Comment:12
+
+
+
+    },
+  ]
 
 
 
