@@ -49,6 +49,7 @@ export default {
   <footer >
     <div class="footer-top">
       <div class="container">
+        <div class="touch">Get in Touch</div>
         <div class="row">
           <div class="col-4">
             <div class="title   ">ABOUT THE BLOG </div>
@@ -122,6 +123,7 @@ export default {
   background-color: $black;
   height: 400px;
   font-size:.8rem;
+  position: relative;
  
   .title{
     color: white;
@@ -181,6 +183,21 @@ export default {
     margin-left: 5px;
     margin-bottom: 7px;
   }
+  .touch{
+    background-color: $blue;
+    width: 100px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    font-family:'Shadows Into Light';
+    font-size: 1rem;
+    box-shadow: -10px -0px $blue;
+  }
+  
 
 }
 .footer-bottom{

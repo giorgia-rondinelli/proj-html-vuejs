@@ -204,7 +204,7 @@ export const store = reactive({
   photoArticle:['/img/blog-13.jpg','/img/blog-16.jpg','/img/blog-20.jpg','/img/blog-23.jpg','/img/blog-29.jpg','/img/blog-40.jpg',],
   collageArticle:{
     img:'',
-    title:'How to Make Friends as a Grown-Up',
+    title:'10 Best Travel Tips After 5 Years Traveling The World',
     text:'Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]',
     writer:'John Doe',
     date:{
