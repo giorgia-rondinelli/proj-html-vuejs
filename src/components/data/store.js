@@ -149,7 +149,7 @@ export const store = reactive({
         month:'jan'
       },
       badge: 'Photography, Travel',
-      Comment:12
+      comment:5
 
 
 
@@ -164,7 +164,7 @@ export const store = reactive({
         month:'jan'
       },
       badge: 'Sports, Business',
-      Comment:12
+      comment:21
 
 
 
@@ -179,11 +179,25 @@ export const store = reactive({
         month:'jan'
       },
       badge: 'Lifestyle, Travel',
-      Comment:12
+      comment:10
 
 
 
     },
+  ],
+  tweets:[
+    { 
+      text:'If you have any suggestions for the nextupdates, let us know.',
+      time:'01:05 PM',
+      date:'Sep 18th'
+
+    },
+    { 
+      text:'We have just updated Porto Admin. Check the changelog for more information.',
+      time:'10:08 AM',
+      date:'Sep 15th'
+
+    }
   ]
 
 

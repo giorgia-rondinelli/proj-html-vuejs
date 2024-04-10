@@ -6,6 +6,7 @@ import Card from './partials/Card.vue'
 import Post from './partials/Post.vue'
 import SideCard from './partials/SideCard.vue'
 import Article from './partials/Article.vue'
+import Tweet from './partials/Tweet.vue'
 
 
 
@@ -17,7 +18,8 @@ export default {
     SideCard,
     Author,
     Badge,
-    Article
+    Article,
+    Tweet
   },
   data(){
     return{
@@ -110,6 +112,16 @@ export default {
       :badge="article.badge"
       />
       </div>
+      <div class="col-3">
+        <div class="title pb-2  pt-5">latest from twitter</div>
+        <Tweet  v-for="tweet in store.tweets" :key="tweet"
+        :text="tweet.text"
+        :time="tweet.time"
+        :date="tweet.date"/>
+        <div class="title pb-2  pt-5">photos from instagram</div>
+        
+      </div>
+      
       </div>
     </div>
   </section>
@@ -136,6 +148,11 @@ export default {
     height: 150px;
   }
  
+}
+.title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8rem;
 }
 
 
