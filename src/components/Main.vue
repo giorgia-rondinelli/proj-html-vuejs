@@ -7,6 +7,8 @@ import Post from './partials/Post.vue'
 import SideCard from './partials/SideCard.vue'
 import Article from './partials/Article.vue'
 import Tweet from './partials/Tweet.vue'
+import Collage from './partials/Collage.vue'
+import Tag from './partials/Tag.vue'
 
 
 
@@ -19,7 +21,9 @@ export default {
     Author,
     Badge,
     Article,
-    Tweet
+    Tweet,
+    Collage,
+    Tag
   },
   data(){
     return{
@@ -119,6 +123,18 @@ export default {
         :time="tweet.time"
         :date="tweet.date"/>
         <div class="title pb-2  pt-5">photos from instagram</div>
+        <div class="d-flex flex-wrap  ">
+          <Collage v-for="photo in store.instaPhoto" :key="photo"
+          :img="photo"/>
+        </div>
+        <div class="title pb-2  pt-5">tags</div>
+        <div class="d-flex">
+        <Tag 
+        v-for="tag in store.tags" :key="tag"
+        :name="tag"/>
+        </div> 
+        <div class="title pb-2  pt-5">find us on facebook</div>
+        <div class="facebook d-flex align-items-center ps-3 mt-1">Olkier Themes</div>
         
       </div>
       
@@ -153,6 +169,12 @@ export default {
   text-transform: uppercase;
   font-weight: 700;
   font-size: .8rem;
+}
+.facebook{
+  border-left: 5px solid $b-2;
+  height: 50px;
+  color: $blue;
+  font-weight: 600;
 }
 
 
